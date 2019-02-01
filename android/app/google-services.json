@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "74849830692",
+    "firebase_url": "https://kerjoyapp.firebaseio.com",
+    "project_id": "kerjoyapp",
+    "storage_bucket": "kerjoyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74849830692:android:b6096f2ee9ba0abd",
+        "android_client_info": {
+          "package_name": "com.careapp.kerjoy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74849830692-10p3966kdrunblvqd3msrq1ack0di0uv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.careapp.kerjoy",
+            "certificate_hash": "df56f88385710e3b9a9a304bcce4991f9d590f0a"
+          }
+        },
+        {
+          "client_id": "74849830692-4vd2rt6phn2vnoth6jj5qm8bgd9rr1nc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbKporNgYT01JSVIHwWIQm-GJB75kyPWM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74849830692-4vd2rt6phn2vnoth6jj5qm8bgd9rr1nc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
