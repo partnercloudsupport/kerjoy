@@ -83,7 +83,7 @@ class _CreateAccountState extends State<CreateAccount> {
         return true;
       }
       
-      List<String> exist = await FirebaseAuth.instance.fetchSignInMethodsForEmail(email: _email);
+      List<String> exist = await FirebaseAuth.instance.fetchProvidersForEmail(email: _email);
       if(exist.isNotEmpty) {
         setState(() {
           emailError = "${fields.email}";
@@ -374,7 +374,7 @@ class _CreateAccountState extends State<CreateAccount> {
       
       
 
-      FirebaseAuth.instance.fetchSignInMethodsForEmail(email: _email).then((exist) async {
+      FirebaseAuth.instance.fetchProvidersForEmail(email: _email).then((exist) async {
         if(exist.isEmpty) {
 
           if(_parent == true) {

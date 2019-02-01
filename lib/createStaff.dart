@@ -138,7 +138,7 @@ class _ShowingStaffDialogContentState extends State<ShowingStaffDialogContent> {
           saveData = true;
         });
 
-        FirebaseAuth.instance.fetchSignInMethodsForEmail(email: _email).then((exist) {
+        FirebaseAuth.instance.fetchProvidersForEmail(email: _email).then((exist) {
           if(exist.isEmpty) {
             FirebaseAuth.instance
           .createUserWithEmailAndPassword(email: _email, password: _pin).then(
@@ -300,7 +300,7 @@ class _ShowingStaffDialogContentState extends State<ShowingStaffDialogContent> {
         return true;
       }
       
-      List<String> exist = await FirebaseAuth.instance.fetchSignInMethodsForEmail(email: _email);
+      List<String> exist = await FirebaseAuth.instance.fetchProvidersForEmail(email: _email);
       if(exist.isNotEmpty) {
         setState(() {
           emailError = fields.memberEmailAlreadyExist;

@@ -377,7 +377,7 @@ class _LoginPageState extends State<LoginPage> {
             // loggedIn = true;
           });
 
-          FirebaseAuth.instance.fetchSignInMethodsForEmail(email: _email).then((exist) {
+          FirebaseAuth.instance.fetchProvidersForEmail(email: _email).then((exist) {
             if(exist.isEmpty) {
               Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => CreateAccount(email: _email,))); 
             } else {
@@ -392,7 +392,7 @@ class _LoginPageState extends State<LoginPage> {
         } 
     } else {
       print('facebook login');
-      FirebaseAuth.instance.fetchSignInMethodsForEmail(email: emailCheck).then((exist) {
+      FirebaseAuth.instance.fetchProvidersForEmail(email: emailCheck).then((exist) {
         if(exist.isEmpty) {
           Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => CreateAccount(email: emailCheck,))); 
         } else {
