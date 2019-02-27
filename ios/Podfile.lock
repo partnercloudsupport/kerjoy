@@ -165,7 +165,7 @@ PODS:
   - image_picker (0.0.1):
     - Flutter
   - leveldb-library (1.20)
-  - multi_image_picker (3.0.11):
+  - multi_image_picker (2.3.33):
     - BSImagePicker (~> 2.9.0)
     - Flutter
   - nanopb (0.3.901):
@@ -185,7 +185,7 @@ DEPENDENCIES:
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_database (from `.symlinks/plugins/firebase_database/ios`)
   - firebase_storage (from `.symlinks/plugins/firebase_storage/ios`)
-  - Flutter (from `.symlinks/flutter/ios`)
+  - Flutter (from `.symlinks/flutter/ios-release`)
   - flutter_facebook_login (from `.symlinks/plugins/flutter_facebook_login/ios`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
   - google_sign_in (from `.symlinks/plugins/google_sign_in/ios`)
@@ -235,7 +235,7 @@ EXTERNAL SOURCES:
   firebase_storage:
     :path: ".symlinks/plugins/firebase_storage/ios"
   Flutter:
-    :path: ".symlinks/flutter/ios"
+    :path: ".symlinks/flutter/ios-release"
   flutter_facebook_login:
     :path: ".symlinks/plugins/flutter_facebook_login/ios"
   fluttertoast:
@@ -257,11 +257,11 @@ SPEC CHECKSUMS:
   BSGridCollectionViewLayout: 3e6f23b3a2b4f0ca9afae09ca01389d1057f7b32
   BSImagePicker: 553707de1adaad42eac252e0b84d20dbdba83fe9
   BSImageView: ab22ff8cae61f1ae17a3c9efeeb216af3cf84a09
-  cloud_firestore: 980813a98d8beb5c321b589845fabf6c4c5bd571
+  cloud_firestore: a2d49d9c7219fce31033eb1a2ee953d7733c91d6
   FBSDKCoreKit: ae214474b25033399c131dc81d258e412582a2ba
   FBSDKLoginKit: c3079d9a4db27c492287b1eed7a4272b28cf8a59
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
-  firebase_auth: a5b249720380ab4ee1c633368cbb84aac9959359
+  firebase_auth: 27a5a77a032d557c18f8e223aaf8ec1368f6cdbc
   firebase_core: c96aa8b2fcf7f5167d32f22034f502f9304952b8
   firebase_database: 431f77dc97eaba31168762025bc31c8a9a68e68b
   firebase_storage: 4991d126595463648bd10b5f75bca54bea4ee924
@@ -286,7 +286,7 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   image_picker: ee00aab0487cedc80a304085219503cc6d0f2e22
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
-  multi_image_picker: c656bb112a804612d0a440e21b1378a52196f335
+  multi_image_picker: c7acc7e265a5b0fd8cdcc790ff235da09510d428
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   path_provider: 09407919825bfe3c2deae39453b7a5b44f467873
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
