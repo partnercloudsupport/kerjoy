@@ -8,6 +8,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:kerjoy/tools/app_data.dart';
 import 'package:kerjoy/tools/app_tools.dart';
 import 'localization/localization.dart';
+import 'package:intl/date_time_patterns.dart';
 
 class Week extends StatefulWidget {
   final String childId;
@@ -81,9 +82,12 @@ class _WeekState extends State<Week> {
     super.initState();
     todayUtcTimestamp = new DateTime.utc(int.parse(currentYear), int.parse(currentMonth), int.parse(currentday)).millisecondsSinceEpoch;
     fetchLocalData();
-    setState(() {
-      noOfDays = getMonthdays();
-    }); 
+    if(this.mounted) {
+      setState(() {
+        noOfDays = getMonthdays();
+      });
+    }
+     
 
   }
 
@@ -499,10 +503,12 @@ class _HorizListState extends State<HorizList> {
   void getRowData() async {
 
         QuerySnapshot data = await Firestore.instance.collection("events").document(dayCare.toString()).collection(todayUtcTimestamp.toString()).document(widget.childId).collection('eventData').getDocuments();
-
+      if(this.mounted) {
         setState(() {
            rowData = data;
-        }); 
+        });
+      }
+         
      if(rowData != null) {
        
        documentsLength = rowData.documents.length;
