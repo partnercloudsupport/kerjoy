@@ -141,7 +141,35 @@ class _StaffLoginState extends State<StaffLogin> {
                   color: grey,
                   size: 32.0,
                 ),
-              )
+              ),
+              SizedBox(
+                height: 0.0,
+              ),
+            GestureDetector(
+              onTap: () {
+                FirebaseAuth.instance.sendPasswordResetEmail(email: widget.email).then((value) {
+                  var snackbar = SnackBar(
+                    content: Text("Please check your email to reset your password."),
+                    duration: Duration(milliseconds: 5000),
+                  );
+
+                  mainKey.currentState.showSnackBar(snackbar);
+                });
+              },
+              child: FlatButton(
+                highlightColor: blue,
+                child: Text(
+                  "Forgot Password",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: blue,
+                    fontFamily: roboto,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16.0
+                  ),
+                ),
+              ),
+            )
             
           ], 
         ),
